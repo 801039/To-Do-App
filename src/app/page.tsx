@@ -14,8 +14,8 @@ async function toggleTodo( id : string, complete: boolean) {
 
 export default async function Home() {
   const todos = await prisma.todo.findMany()
-  //await prisma.todo.create({data: { title: "test", complete: false }})
-
+    
+      
   return (
     <>
       <header className='flex justify-between items-center mb-4'>
